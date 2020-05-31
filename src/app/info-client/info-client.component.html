@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+          <h2> <strong> client </strong></h2>
+            <form [formGroup]="clientForm" >
+              <div class="form-group">
+                <label for="reference">Reference </label>
+                <input type="text" formControlName="reference" class="form-control" [ngClass]>
+              </div>
+              <div class="form-group">
+                <label for="nomLigne1">Nom * </label>
+                <input type="text" formControlName="nomLigne1" class="form-control" [ngClass]>
+              </div>
+              <div class="form-group">
+                <label for="nomLigne2">Nom (lign 2)</label>
+                <input type="text" formControlName="nomLigne2" class="form-control" [ngClass]>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" formControlName="email" class="form-control" [ngClass]>
+              </div>
+              </form>
+            </div>
+        </div>
+    </div>

@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AcceuilComponent } from './acceuil/acceuil.component';
-import { PageComponent } from './page/page.component';
-import { LoginComponent } from './login/login.component';
-import { RegiterComponent } from './regiter/regiter.component';
+import { AcceuilComponent } from './oldapp/acceuil/acceuil.component';
+import { PageComponent } from './oldapp/page/page.component';
+import { LoginComponent } from './oldapp/login/login.component';
+import { RegiterComponent } from './oldapp/regiter/regiter.component';
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { Routes , RouterModule } from '@angular/router';
+import { InfoClientComponent } from './info-client/info-client.component';
+import { AdresseComponent } from './adresse/adresse.component';
+import { FacturationComponent } from './facturation/facturation.component';
+import { PersoneDeContactComponent } from './persone-de-contact/persone-de-contact.component';
+
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: '', component: AppComponent },
+  { path: 'register', component: RegiterComponent },
+  { path: 'home', component: AcceuilComponent },
+  { path: '', component: AcceuilComponent },
+
+
 ];
 
 
@@ -22,7 +31,12 @@ const appRoutes: Routes = [
     AcceuilComponent,
     PageComponent,
     LoginComponent,
-    RegiterComponent
+    RegiterComponent,
+    InfoClientComponent,
+    AdresseComponent,
+    FacturationComponent,
+    PersoneDeContactComponent,
+
   ],
   imports: [
     BrowserModule,

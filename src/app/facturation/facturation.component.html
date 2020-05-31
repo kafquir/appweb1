@@ -1,0 +1,42 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+          <h2> <strong> FACTURATION </strong></h2>
+            <form [formGroup]="facturationForm" >
+              <div class="form-group">
+                <label for="langue"> Langue * </label>
+                <input type="text" formControlName="langue" class="form-control" [ngClass]>
+              </div>
+              <div class="form-group">
+                <label for="numTVA">Numero de TVA </label>
+                <select  formControlName="numTVA">
+                <option value="HJ">HJ639563</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tauxTVA">Taux de TVA par defaut</label>
+                <select  formControlName="tauxTVA">
+                <option value="fisrtNum">20%</option>
+                <option value="secondNum">14%</option>
+                <option value="thirdNum">10%</option>
+                <option value="firthNum">7%</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="delaiPaiement"> Délai de paiement </label>
+                <input type="text" formControlName="delaiPaiement" class="form- control" [ngClass]>
+                <select  formControlName="delai">
+                <option value="delaiMini">1 Jours</option>
+                <option value="delaiMaxi">7 Jours</option>
+                </select>
+              </div>
+              <div class="form-group">
+              <label for="message"> Message </label>
+              <textarea rows="10" cols="50" name="comment">
+              Enter text here...</textarea>
+              </div>
+              </form>
+            </div>
+        </div>
+    </div>
