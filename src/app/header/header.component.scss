@@ -1,0 +1,225 @@
+.form-group .control-label,
+.form-group-default .control-label {
+  color: #717171;
+  font-weight: 400;
+}
+.dropdownjs:after {
+  content: "\e8a3";
+}
+.fakeinput.-left + ul {
+  right: 0 !important;
+  left: auto !important;
+}
+.fakeinput.-left + ul[placement="bottom-left"] {
+  -webkit-transform-origin: top right !important;
+          transform-origin: top right !important;
+}
+.fakeinput.-left + ul[placement="top-left"] {
+  -webkit-transform-origin: bottom right !important;
+          transform-origin: bottom right !important;
+}
+* {
+  box-sizing: border-box;
+}
+.top-navbar {
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #D3D3D3	;
+  color: #FFF;
+}
+.top-navbar.-sticky {
+  top: -50px;
+}
+.top-navbar .subnavbar {
+  padding: 0 20px;
+}
+.top-navbar .subnavbar > .column {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+.top-navbar .subnavbar > .column .-buttonicon {
+  border-radius: 100%;
+
+}
+.top-navbar .subnavbar > .column .-buttonicon.-small i {
+  font-size: 24px;
+  margin: 18px;
+}
+.top-navbar .subnavbar li {
+  display: inline-block;
+}
+.top-navbar .subnavbar li a {
+  color: #FFF;
+  display: block;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.top-navbar .subnavbar li a i {
+  float: left;
+  box-sizing: initial;
+}
+.top-navbar .subnavbar li a:hover,
+.top-navbar .subnavbar li a:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.top-navbar .subnavbar li a.-active {
+  border-bottom: 3px solid white;
+}
+.top-navbar .subnavbar li .text {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+}
+.top-navbar .subnavbar li i + .text {
+  padding-right: 20px;
+}
+.top-navbar .subnavbar li .timetravel-dropdown {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  line-height: 0;
+  position: relative;
+}
+.top-navbar .subnavbar li .timetravel-dropdown .selection {
+  font-size: 15px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 20px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.top-navbar .subnavbar li .timetravel-dropdown .caret {
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  cursor: pointer;
+}
+.top-navbar .subnavbar.-one {
+  height: 50px;
+}
+.top-navbar .subnavbar.-one li a {
+  height: 50px;
+}
+.top-navbar .subnavbar.-one li i {
+  font-size: 20px;
+  margin: 15px;
+}
+.top-navbar .subnavbar.-one li.user-avatar a {
+  position: absolute;
+  top: 0cm;
+  right: 3cm;
+  display: block;
+
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8NlGVSlIjGTy2nKv9NowPlyD6-TSqqI5G_WQ86q6J8Firu8xb&s);
+  background-size: cover;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.setting
+{
+  position: absolute;
+  top: 0cm;
+ right: 0.5cm;
+  display: block;
+
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR12sS8u7WQVWVt7zjUD9FrfZrly099Xg_4FR3dwSNCnQdQqqlu&usqp=CAU);
+  background-size: cover;
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.lampe
+{
+  position: absolute;
+  top: 0cm;
+  right: 1.7cm;
+  display: block;
+
+  background-image: url(https://previews.123rf.com/images/vanreeell/vanreeell1901/vanreeell190100016/116552938-light-bulb-line-icon-with-rays-idea-and-creativity-symbol-.jpg);
+  background-size: cover;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.top-navbar .subnavbar.-one li.user-avatar a:focus,
+.top-navbar .subnavbar.-one li.user-avatar a:active {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+.top-navbar .subnavbar.-two {
+  background-color: #1d8b90;
+  height: 60px;
+}
+.top-navbar .subnavbar.-two li a {
+  height: 60px;
+}
+.top-navbar .subnavbar.-two li i {
+  font-size: 32px;
+  margin: 14px;
+}
+.top-navbar .subnavbar.-two li svg.icon {
+  width: 32px;
+  height: 32px;
+  display: inline;
+  margin: 14px;
+}
+.top-navbar .subnavbar.-two .sidemenu-toggle .open {
+  display: none;
+}
+.top-navbar .subnavbar.-two .sidemenu-toggle .closed {
+  display: block;
+}
+.top-navbar .subnavbar.-two .sidemenu-toggle.-active {
+  border-bottom: 0;
+}
+.top-navbar .subnavbar.-two .sidemenu-toggle.-active .open {
+  display: block;
+}
+.top-navbar .subnavbar.-two .sidemenu-toggle.-active .closed {
+  display: none;
+}
+.top-navbar .subnavbar.-two .navbar-tabs {
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 500px;
+  margin: auto;
+  z-index: 5;
+}
+.top-navbar .subnavbar.-two .navbar-tabs a {
+  padding: 0 20px;
+}
+@media (max-width: 767px) {
+  .top-navbar .subnavbar.-two .navbar-tabs a {
+    padding: 0 10px;
+  }
+}
+.top-navbar .logo {
+  width: 190px;
+  height: 30px;
+  margin: 10px 0;
+  cursor: pointer;
+}

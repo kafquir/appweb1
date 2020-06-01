@@ -3,5 +3,5 @@ export class DynamicElement {
          elem2 : string;
          elem3 : string;
          elem4 : string;
-         elem5 : string
+         elem5 : string;
 }

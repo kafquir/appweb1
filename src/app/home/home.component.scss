@@ -1,0 +1,20 @@
+button{
+  position: absolute;
+  left: 17cm;
+  top: 19cm;
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.header h2{
+  position: absolute;
+  left: 3.7cm;
+  top: 2cm;
+  background-color: #D3D3D3;
+  width: 27cm;
+  height: 1.5cm;
+}

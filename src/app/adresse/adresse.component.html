@@ -14,8 +14,8 @@
               </div>
               <div class="form-group">
                 <label for="codePostale">Code postale et Ville *</label>
-                <input type="text" formControlName="codePostale" class="form-control" [ngClass]>
-                <select  formControlName="villes">
+                <input id="codeP" type="text" formControlName="codePostale" class="form-control" [ngClass]>
+                <select  id="selectVilles" formControlName="villes">
                 <option value="Bruxelles">Bruxelles</option>
                 <option value="Paris">Paris</option>
                 <option value="Munich">Munich</option>
@@ -23,10 +23,10 @@
               </div>
               <div class="form-group">
                 <label for="pays">Pays</label>
-                <select formControlName="pays">
-                  <option value="Belgique">Belgique</option>
-                   <option value="France">France</option>
-                   <option value="Allemagne">Allemagne</option>
+                <select id="selectPays" formControlName="pays">
+                <option value="Belgique">Belgique</option>
+                <option value="France">France</option>
+                <option value="Allemagne">Allemagne</option>
                 </select>
               </div>
               </form>

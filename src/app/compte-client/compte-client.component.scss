@@ -1,0 +1,24 @@
+table {
+  position: absolute;
+  border-spacing: 0;
+  width: 30cm;;
+  border: 1px solid #ddd;
+  left: 5cm;
+  top: 5cm;
+  background-color:  black;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+div{
+  position: absolute;
+  right: 1cm;
+  top: 4cm;
+}

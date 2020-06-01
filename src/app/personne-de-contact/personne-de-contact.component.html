@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+      <form >
+       <table>
+       <thead>
+      <th>&nbsp;</th>
+      <th><label id="cv" for="civilité">Civilité</label></th>
+      <th><label id="fc"for="fonction">Nom Fonction</label></th>
+      <th><label id="em"for="email">Email</label></th>
+      <th><label id="tel1"for="numTelephone1">Num de telephone</label></th>
+      <th><label id="tel2"for="numTelephone2">num de telephone(2)</label></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let elem of dynamicArray; let i = index;">
+      <td> <button id="supprimer" type="button" (click)="deleteRow(i)">
+        <i class="fa fa-trash-o" style="font-size:36px"></i>
+      </button>
+      </td>
+       <td>
+       <select class="civilité" name="civilité" [(ngModel)]="elem.elem1"     class="form-control">
+       <option value="homme">Homme</option>
+       <option value="femme">Femme</option>
+      </select>
+        </td>
+        <td>
+        <input [(ngModel)]="elem.elem2" class="form-control" type="text" />
+         </td>
+         <td>
+         <input [(ngModel)]="elem.elem3" class="form-control" type="text"/>
+         </td>
+          <td>
+          <input [(ngModel)]="elem.elem4" class="form-control" type="text"/>
+          </td>
+          <td>
+         <input [(ngModel)]="elem.elem5" class="form-control" type="text"/>
+          </td>
+          </tr>
+          </tbody>
+          <button id="ajouter" type="button" name="button" (click)="addRow()"> Ajouter la  ligne
+          </button>
+      </table>
+</form>
+</div>
+</div>
+</div>
+</div>

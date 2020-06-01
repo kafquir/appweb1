@@ -12,14 +12,19 @@ import { Routes , RouterModule } from '@angular/router';
 import { InfoClientComponent } from './info-client/info-client.component';
 import { AdresseComponent } from './adresse/adresse.component';
 import { FacturationComponent } from './facturation/facturation.component';
-import { PersoneDeContactComponent } from './persone-de-contact/persone-de-contact.component';
+import { PersonneDeContactComponent } from './personne-de-contact/personne-de-contact.component';
+import { CompteClientComponent } from './compte-client/compte-client.component';
+import { HeaderComponent } from './header/header.component';
+import { SidebareLeftComponent } from './sidebare-left/sidebare-left.component';
+import { HomeComponent } from './home/home.component';
 
 
-const appRoutes: Routes = [
+const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegiterComponent },
-  { path: 'home', component: AcceuilComponent },
-  { path: '', component: AcceuilComponent },
+  { path: 'infoClient', component: InfoClientComponent },
+  { path: 'compteClient', component: CompteClientComponent },
+  { path: 'home', component: HomeComponent },
+  
 
 
 ];
@@ -35,7 +40,11 @@ const appRoutes: Routes = [
     InfoClientComponent,
     AdresseComponent,
     FacturationComponent,
-    PersoneDeContactComponent,
+    PersonneDeContactComponent,
+    CompteClientComponent,
+    HeaderComponent,
+    SidebareLeftComponent,
+    HomeComponent,
 
   ],
   imports: [
@@ -43,9 +52,11 @@ const appRoutes: Routes = [
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(routes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
+
 })
 export class AppModule { }
