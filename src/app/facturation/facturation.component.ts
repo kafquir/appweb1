@@ -12,6 +12,7 @@ export class FacturationComponent implements OnInit {
   langue: new FormControl(''),
   numTVA: new FormControl(''),
   tauxTVA: new FormControl(''),
+  localisation: new FormControl(''),
   delaiPaiement: new FormControl(''),
   });
   constructor(private formBuilder: FormBuilder) { }
@@ -21,6 +22,7 @@ export class FacturationComponent implements OnInit {
       langue : ['', Validators.required],
       numTVA : ['', Validators.required],
       tauxTVA : ['', Validators.required],
+      localisation : ['', Validators.required],
       delaiPaiement:['',Validators.required],
         });
   }

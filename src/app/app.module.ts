@@ -18,13 +18,14 @@ import { HeaderComponent } from './header/header.component';
 import { SidebareLeftComponent } from './sidebare-left/sidebare-left.component';
 import { HomeComponent } from './home/home.component';
 
+import { ClientService } from "./services/clientService";
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'infoClient', component: InfoClientComponent },
   { path: 'compteClient', component: CompteClientComponent },
   { path: 'home', component: HomeComponent },
-  
+
 
 
 ];
@@ -46,6 +47,7 @@ const routes: Routes = [
     SidebareLeftComponent,
     HomeComponent,
 
+
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,7 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [ClientService],
   bootstrap: [AppComponent],
   exports: [RouterModule]
 

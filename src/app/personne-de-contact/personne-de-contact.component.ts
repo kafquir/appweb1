@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DynamicElement} from '../dynamicElement.model'
+import { ClientService } from "../services/clientService";
 
 @Component({
   selector: 'app-personne-de-contact',
@@ -8,15 +9,14 @@ import {DynamicElement} from '../dynamicElement.model'
 })
 export class PersonneDeContactComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private clientService : ClientService) { }
   dynamicArray : Array<DynamicElement>=[];
   newElement: any = {};
 
   ngOnInit(): void {
 
-
-  }
-
+}
   addRow() {
       this.newElement = {elem1: "", elem2: "",elem3:"", elem4:"", elem5:""};
       this.dynamicArray.push(this.newElement);

@@ -1,3 +1,7 @@
+<div class="compte">
+  <h2>Compte client</h2>
+  <button type="button" name="button" routerLink="/home">Nouveau client</button>
+</div>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="search-container">
@@ -6,7 +10,6 @@
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
-
 <table>
   <thead>
     <th> Action </th>
@@ -18,14 +21,8 @@
     <th> Action</th>
   </thead>
   <tbody>
-    <tr  >
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td>
+    <tr *ngFor= "let elem of listAffichages" >
+      <td > {{elem.reference}} </td>
     </tr>
   </tbody>
 </table>
