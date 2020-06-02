@@ -16,7 +16,7 @@ export class ClientService {
   private Client =[
     {
       reference: "1",
-      nom1 : "afquir",
+      nom1 : 'afquir',
       nom2 :"karim",
       email :"ka@gmail.com",
     },

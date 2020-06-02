@@ -18,7 +18,7 @@ export class CompteClientComponent implements OnInit {
   Adresse : any [];
   Personne: any [];
   clientSubscription: Subscription;
-  listAffichages : ListeAffichage[];
+  listeAffichages : any[];
   affichage : ListeAffichage = new ListeAffichage();
   ngOnInit(): void {
     this.clientSubscription= this.clientService.clientSubject.subscribe(
@@ -40,15 +40,28 @@ export class CompteClientComponent implements OnInit {
                   ( Personne : any []) => {
                       this.Personne = Personne;
 
-                    });
-        for ( let i=0; i<this.Client.length; i++){
-      this.affichage.reference=this.Client[i].reference;
-      this.affichage.nom=this.Client[i].reference;
-      this.affichage.cp=this.Client[i].reference;
-      this.affichage.ville=this.Client[i].reference;
-      this.affichage.tva=this.Client[i].reference;
-      this.listAffichages.push(this.affichage);
+                 });}
+      /*  la premiere methode pour l'affichage des ligne du tableau
+
+      for ( let i=0; i<this.Client.length; i++){
+      this.affichage.reference=this.Adresse.reference;
+      this.affichage.nom=this.Client.nom1;
+      this.affichage.cp=this.Adresse.codePostale;
+      this.affichage.ville=this.Adresse.ville;
+      this.affichage.tva=this.Facturation.tauxTVA;
+      this.listeAffichages.push(this.affichage[i]);
    }
 
 }
+*/
+        ligne=[
+          {
+          reference: 'K25498',
+          nom : 'HIJJI YOUSSEF',
+          cp : '90000',
+          villes: 'bruxelles',
+          tva : 'HJ676767',
+
+        },
+      ];
 }

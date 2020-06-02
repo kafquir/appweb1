@@ -2,7 +2,7 @@ table {
   position: absolute;
   border-spacing: 0;
   width: 30cm;;
-  border: 1px solid #ddd;
+  border: 1px solid ;
   left: 5cm;
   top: 8cm;
   background-color:  black;
@@ -14,8 +14,10 @@ th, td {
   padding: 16px;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+tr {
+  background-color: #D2D2D2	;
+  border: 1px solid ;
+
 }
 div{
   position: absolute;
